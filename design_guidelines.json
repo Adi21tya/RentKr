@@ -1,0 +1,127 @@
+{
+  "identity": {
+    "name": "RentKr",
+    "persona": "E1 - The Anti-AI Designer",
+    "tone": "Trustworthy, Energetic, Efficient, Broker-Free",
+    "theme_strategy": "Swiss Red - High Contrast, Bold Typography, Minimalist"
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "Inter",
+    "heading_styles": "font-manrope font-bold tracking-tight",
+    "body_styles": "font-inter leading-relaxed",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-extrabold tracking-tighter",
+      "h2": "text-3xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold",
+      "body": "text-base md:text-lg text-slate-600 dark:text-slate-300"
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "RentKr Red",
+      "hex": "#E11D48",
+      "tailwind": "bg-rose-600",
+      "description": "Use for primary CTAs, active states, and brand highlights. Do not overuse."
+    },
+    "secondary": {
+      "name": "Slate Dark",
+      "hex": "#0F172A",
+      "tailwind": "bg-slate-900",
+      "description": "Use for headings, dark mode backgrounds, and strong contrast elements."
+    },
+    "accent": {
+      "name": "AI Teal",
+      "hex": "#14B8A6",
+      "tailwind": "text-teal-500",
+      "description": "Use sparingly for AI-related features (Match Score, Verified Badge) to contrast with Red."
+    },
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#020617",
+      "subtle_light": "#F8FAFC",
+      "subtle_dark": "#0F172A"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/70 dark:bg-slate-900/70 border border-white/20 shadow-sm",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300",
+    "borders": "border border-slate-200 dark:border-slate-800",
+    "gradients": "bg-gradient-to-br from-rose-500 to-rose-700 (Use only for primary buttons/icons, NEVER full screen)",
+    "radius": "rounded-xl"
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "hero": "Split screen or Centered with large search bar. Use 'Hero Image' as background with overlay or side-by-side.",
+      "features": "Bento Grid (Mode A). Mix large spans for key features (AI Match) and small spans for stats.",
+      "trust_section": "Marquee of trust badges (No Brokerage, Verified).",
+      "spacing": "py-24 px-6 md:px-12 lg:px-24"
+    },
+    "dashboard": {
+      "grid": "High Density Grid (Mode B). Sidebar navigation. Cards for stats.",
+      "cards": "Flat, bordered cards. No heavy shadows. Header with actions.",
+      "spacing": "p-6 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-rose-600 hover:bg-rose-700 text-white rounded-full px-8 py-3 font-semibold shadow-lg shadow-rose-600/20 transition-all hover:scale-105 active:scale-95",
+      "secondary": "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 rounded-full px-8 py-3 font-medium transition-all",
+      "ghost": "text-slate-600 hover:text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors"
+    },
+    "cards": {
+      "property": "group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 hover:border-rose-200 dark:hover:border-rose-900 transition-all duration-300",
+      "feature": "p-8 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 hover:bg-white dark:hover:bg-slate-900 transition-colors"
+    },
+    "inputs": {
+      "style": "h-12 rounded-lg border-slate-200 focus:border-rose-500 focus:ring-rose-500/20 bg-white dark:bg-slate-950"
+    },
+    "badges": {
+      "verified": "bg-teal-50 text-teal-700 border border-teal-200 px-2 py-0.5 rounded-md text-xs font-bold uppercase tracking-wider flex items-center gap-1",
+      "ai_match": "bg-rose-50 text-rose-700 border border-rose-200 px-2 py-0.5 rounded-md text-xs font-bold flex items-center gap-1"
+    }
+  },
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1627141234469-24711efb373c?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "interior_living": "https://images.unsplash.com/photo-1663756915301-2ba688e078cf?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "happy_tenants": "https://images.unsplash.com/photo-1758523671893-0ba21cf4260f?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "keys_handover": "https://images.pexels.com/photos/7415055/pexels-photo-7415055.jpeg",
+    "modern_exterior": "https://images.unsplash.com/photo-1696237461860-630be53f179c?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "ai_abstract": "https://images.unsplash.com/photo-1628592102751-ba83b0314276?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "icons": {
+    "library": "lucide-react",
+    "instructions": "Use Lucide icons for all UI elements. Use 'Sparkles' for AI, 'ShieldCheck' for verified, 'Home' for dashboard, 'Search' for search bars."
+  },
+  "motion": {
+    "instructions": "Use framer-motion for all animations.",
+    "variants": {
+      "fadeIn": "initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}",
+      "staggerContainer": "initial='hidden' animate='show' variants={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } } }}",
+      "hoverScale": "whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}"
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text on Red buttons is White. Ensure text on light backgrounds is Slate-900.",
+    "focus_states": "focus:ring-2 focus:ring-rose-500 focus:ring-offset-2",
+    "aria": "All interactive elements must have aria-labels if no text is present."
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL DEPENDENCIES: `npm install framer-motion lucide-react clsx tailwind-merge`",
+    "2. CONFIGURE TAILWIND: Update `tailwind.config.js` to include the 'rose' color palette as 'primary' and add 'Manrope' font family.",
+    "3. CREATE COMPONENTS: Build `Button`, `Card`, `Input` using the styles defined above. Do not use default Shadcn styles without customization.",
+    "4. LANDING PAGE: Build a 'Hero' section with the `hero_bg` image, a 'Search' component floating over it, and a 'Features' section using the Bento Grid.",
+    "5. DASHBOARD: Create a sidebar layout. Use the 'High Density Grid' for the dashboard content.",
+    "6. AI FEATURES: Implement the 'AI Match Score' visual using a circular progress indicator (use SVG or a library like `recharts` pie chart).",
+    "7. THEME: Default to Light Mode, but ensure Dark Mode support is robust (slate-950 backgrounds).",
+    "8. DATA-TESTID: Add `data-testid` to all buttons, inputs, and links."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid 'AI Slop' - no generic centered layouts.",
+    "Use 2-3x more spacing than typical (p-8, p-12).",
+    "Micro-animations are mandatory for every interaction.",
+    "Never use transparent backgrounds for dropdowns/headers without blur.",
+    "Use 'sonner' for toasts.",
+    "Export components as named exports."
+  ]
+}
